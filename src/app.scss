@@ -1,0 +1,25 @@
+html,
+body {
+  position: relative;
+  color: #2a2a2a;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.ml16 {
+  padding: 20px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.google-map-view div {
+  outline: none !important;
+}
