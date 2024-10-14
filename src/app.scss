@@ -23,3 +23,22 @@ body {
 .google-map-view div {
   outline: none !important;
 }
+
+.leaflet-control-attribution.leaflet-control {
+  display: none !important;
+}
+
+#reception-map {
+  .leaflet-left {
+    left: auto !important;
+    right: 0 !important;
+    .leaflet-control {
+      margin-left: 0 !important;
+      margin-right: 10px !important;
+    }
+  }
+}
+
+.leaflet-container {
+  background-color: lightgray; /* Change map background color */
+}

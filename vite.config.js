@@ -15,5 +15,12 @@ export default defineConfig(({ mode }) => {
     define: {
       'process.env': env,
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler', // or "modern"
+        },
+      },
+    },
   };
 });

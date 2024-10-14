@@ -4,12 +4,13 @@ import { useEffect, useRef, useState } from 'react';
 // utils
 import isEmpty from '../../utils/isEmpty';
 
-const CustomDropdown = ({ placeholder, data }) => {
+const CustomDropdown = ({ placeholder, data, onChange }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [selectedValue, setSelectedValue] = useState('');
 
-  const getSelectedValue = (text) => {
-    setSelectedValue(text);
+  const getSelectedValue = (value) => {
+    setSelectedValue(value.text);
+    onChange(value.text, value.code);
     setOpenMenu(false);
   };
 
@@ -52,11 +53,11 @@ const CustomDropdown = ({ placeholder, data }) => {
         <div className='absolute z-10 shadow top-[105%] w-full h-auto rounded-[2px] bg-custom-light-gray border-solid border-[1px] border-custom-darker-gray color-custom-black'>
           {data.map((value, index) => (
             <div
-              key={`placeholder ${value} ${index}`}
+              key={`placeholder ${value.text} ${index}`}
               onClick={() => getSelectedValue(value)}
               className='text-[16px] p-[.75em] cursor-pointer hover:bg-blue-500 hover:text-white'
             >
-              {value}
+              {value.text}
             </div>
           ))}
         </div>
