@@ -72,7 +72,7 @@ const RSVPSection = () => {
   return (
     <div
       id='rsvp'
-      className='relative pt-[110px] xs:pt-[210px] sm:pt-[260px] md:pt-[410px]  pb-[80px] px-4 bg-custom-gray'
+      className='relative pt-[110px] xs:pt-[160px] sm:pt-[260px] md:pt-[410px] pb-[80px] px-4 bg-custom-gray'
     >
       <div className='mx-auto max-w-screen-2xl'>
         <div className='absolute top-[-200px] xs:top-[-260px] left-[50%] translate-x-[-50%] w-full flex justify-center'>
