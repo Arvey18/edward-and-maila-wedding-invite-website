@@ -22,10 +22,24 @@
     <meta http-equiv="imagetoolbar" content="no" />
     <meta http-equiv="x-dns-prefetch-control" content="off" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/vite.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=%VITE_GOOGLE_RECAPTCHA_SITE_KEY%"></script>
+    <script type="text/javascript">
+      var onloadCallback = function () {
+        grecaptcha.ready(function () {
+          grecaptcha.execute('%VITE_GOOGLE_RECAPTCHA_SITE_KEY%').then(function (token) {
+            if (token.length == 0) {
+              alert('Bot Identified!');
+            } else {
+              alert('verified');
+              localStorage.setItem('test', token);
+            }
+          });
+        });
+      };
+    </script>
   </head>
   <body>
     <div id="root"></div>
