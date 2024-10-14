@@ -3,7 +3,6 @@ import { init, send } from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
 import CustomDropdown from '../customDropdown';
 import CoupleImage from '../../assets/images/wedding-photo-1.jpg';
-
 import serverConfig from '../../constants/serverConfig';
 
 const { VITE_GOOGLE_RECAPTCHA_SITE_KEY, EMAIL_JS_USER_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_SERVICE_ID } = serverConfig;
@@ -24,6 +23,7 @@ const RSVPSection = () => {
 
   const [isSent, setIsSent] = useState(false);
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,30 +32,39 @@ const RSVPSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const token = await reCaptchaRef.current.executeAsync();
-    // Ensure attending is selected
-    if (!formData.attending) {
-      setError('Please select if you are attending or not.');
-      return;
+    console.log(isLoading);
+    if (!isLoading) {
+      // Ensure attending is selected
+      if (!formData.attending) {
+        setError('Please select if you are attending or not.');
+        return;
+      }
+      const token = await reCaptchaRef.current.executeAsync();
+      console.log(token, 'token');
+
+      // Set loading state to true
+      setIsLoading(true);
+
+      // Sending email using EmailJS
+      send(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, { ...formData, 'g-recaptcha-response': token })
+        .then((response) => {
+          console.log('Email sent successfully!', response.status, response.text);
+          setIsSent(true);
+          setError(null); // Reset error if the email is sent successfully
+          // Reset form data
+          setFormData({ ...formData, firstname: '', lastname: '', attending: '', message: '' });
+          reCaptchaRef.current.reset();
+        })
+        .catch((error) => {
+          reCaptchaRef.current.reset();
+          console.log('Failed to send email. Error:', error);
+          setError('Failed to send email. Please try again later.');
+        })
+        .finally(() => {
+          // Reset loading state after the process
+          setIsLoading(false);
+        });
     }
-
-    console.log(token, 'token');
-
-    // Sending email using EmailJS
-    send(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, { ...formData, 'g-recaptcha-response': token })
-      .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
-        setIsSent(true);
-        setError(null); // Reset error if the email is sent successfully
-        // Reset form data
-        setFormData({ ...formData, firstname: '', lastname: '', attending: '', message: '' });
-        reCaptchaRef.current.reset();
-      })
-      .catch((error) => {
-        reCaptchaRef.current.reset();
-        console.log('Failed to send email. Error:', error);
-        setError('Failed to send email. Please try again later.');
-      });
   };
 
   console.log(formData, 'form data');
@@ -94,7 +103,7 @@ const RSVPSection = () => {
                       id='firstname'
                       name='firstname'
                       type='text'
-                      placeholder='Firstname'
+                      placeholder='Firstname *'
                       value={formData.firstname}
                       onChange={handleChange}
                       required
@@ -106,7 +115,7 @@ const RSVPSection = () => {
                       id='lastname'
                       name='lastname'
                       type='text'
-                      placeholder='Lastname'
+                      placeholder='Lastname *'
                       value={formData.lastname}
                       onChange={handleChange}
                       required
@@ -116,7 +125,7 @@ const RSVPSection = () => {
                 </div>
                 <div>
                   <CustomDropdown
-                    placeholder='Are you attending'
+                    placeholder='Are you attending *'
                     data={[
                       { text: 'Yes, I am attending', code: true },
                       { text: 'No, I am not attending', code: false },
@@ -142,9 +151,11 @@ const RSVPSection = () => {
                 />
                 <button
                   type='submit'
-                  className='bg-custom-pink text-white px-4 py-2 rounded hover:bg-custom-darker-pink transition duration-200'
+                  className={`${
+                    isLoading ? 'bg-gray-300 cursor-not-allowed ' : 'bg-custom-darker-pink'
+                  } text-white px-4 py-2 rounded transition duration-200`}
                 >
-                  Submit RSVP
+                  {isLoading ? 'Sending...' : 'Submit RSVP'}
                 </button>
                 {error && <p className='text-red-600'>{error}</p>}
               </>
