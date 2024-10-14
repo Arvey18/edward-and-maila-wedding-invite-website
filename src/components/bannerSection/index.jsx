@@ -4,7 +4,7 @@ import BackgroundImageSample from '../../assets/images/banner-photo.jpg';
 const BannerSection = () => {
   return (
     <div
-      className='relative px-[10px] bg-scroll bg-custom-gray bg-no-repeat bg-cover flex flex-col justify-center items-center bg-center h-svh w-[100%]'
+      className='relative px-[10px] bg-custom-gray bg-no-repeat bg-cover flex flex-col justify-center items-center bg-center h-svh w-[100%]'
       style={{
         backgroundImage: `url(${BackgroundImageSample})`,
       }}
