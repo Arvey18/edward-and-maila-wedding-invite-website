@@ -22,7 +22,7 @@ const LocationSection = () => {
     <>
       <div
         id='location'
-        className='relative bg-fixed bg-custom-gray pt-[80px] pb-[80px] md:pb-[260px] bg-cover bg-no-repeat bg-center'
+        className='relative bg-scroll bg-custom-gray pt-[80px] pb-[80px] md:pb-[260px] bg-cover bg-no-repeat bg-center'
         style={{ backgroundImage: `url(${LeavesPattern})` }}
       >
         <div className='text-[24px] font-medium w-[100%] flex flex-col justify-center items-center px-4'>
