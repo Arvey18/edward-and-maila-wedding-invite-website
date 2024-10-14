@@ -70,13 +70,18 @@ const RSVPSection = () => {
   console.log(formData, 'form data');
 
   return (
-    <div id='rsvp' className='relative pt-[410px] pb-[80px] px-4 bg-custom-gray'>
+    <div
+      id='rsvp'
+      className='relative pt-[110px] xs:pt-[210px] sm:pt-[260px] md:pt-[410px]  pb-[80px] px-4 bg-custom-gray'
+    >
       <div className='mx-auto max-w-screen-2xl'>
-        <div className='absolute top-[-260px] left-[50%] translate-x-[-50%] w-full flex justify-center'>
-          <img src={CoupleImage} className='w-[900px]' alt='couple-photo' />
+        <div className='absolute top-[-200px] xs:top-[-260px] left-[50%] translate-x-[-50%] w-full flex justify-center'>
+          <img src={CoupleImage} className='w-full max-w-[900px]' alt='couple-photo' />
         </div>
         <div className='text-[24px] font-medium w-[100%] flex flex-col justify-center items-center px-4'>
-          <div className='relative bg-transparent text-[70px] px-[25px] z-20 font-haviland'>Are You Attending?</div>
+          <div className='relative text-center bg-transparent text-[50px] md:text-[70px] px-[0px] md:px-[25px] z-20 font-haviland'>
+            Are You Attending?
+          </div>
           <div className='z-10 h-[2px] bg-custom-darker-pink w-[150px] mt-[20px]'></div>
         </div>
         <div className='relative m-auto text-center max-w-[580px] px-4 mt-[40px]'>
@@ -86,7 +91,7 @@ const RSVPSection = () => {
 
         <form
           onSubmit={handleSubmit}
-          className='bg-white mt-[60px] shadow relative w-[745px] mx-auto p-[50px] flex flex-col gap-5'
+          className='bg-white mt-[60px] shadow relative w-full max-w-[745px] mx-auto p-[20px] md:p-[50px] flex flex-col gap-5'
         >
           <>
             {isSent ? (

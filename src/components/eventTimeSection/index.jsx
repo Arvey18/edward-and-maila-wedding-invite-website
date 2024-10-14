@@ -33,10 +33,15 @@ const EventTimeSection = () => {
   const formatNumber = (num) => (num < 10 ? `0${num}` : num);
 
   return (
-    <div id='event' className='relative pt-[80px] pb-[340px] px-4 bg-white bg-cover bg-no-repeat bg-center'>
+    <div
+      id='event'
+      className='relative pt-[80px] pb-[290px] xs:pb-[340px] px-4 bg-white bg-cover bg-no-repeat bg-center'
+    >
       <div className='mx-auto max-w-screen-2xl'>
         <div className='text-[24px] font-medium w-[100%] flex flex-col justify-center items-center px-4'>
-          <div className='relative bg-transparent text-[70px] px-[25px] z-20 font-haviland'>Time left until Event</div>
+          <div className='relative text-center bg-transparent text-[50px] md:text-[70px] px-[0px] md:px-[25px] z-20 font-haviland'>
+            Time left until Event
+          </div>
           <div className='z-10 h-[2px] bg-custom-darker-pink w-[150px] mt-[20px]'></div>
         </div>
         <div className='max-w-screen-lg mx-auto flex flex-row mt-[40px]'>
