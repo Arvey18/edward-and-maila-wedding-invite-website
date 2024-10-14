@@ -26,7 +26,7 @@ const LocationSection = () => {
         style={{ backgroundImage: `url(${LeavesPattern})` }}
       >
         <div className='text-[24px] font-medium w-[100%] flex flex-col justify-center items-center px-4'>
-          <div className='relative overflow-visible text-center bg-transparent text-[50px] md:text-[70px] px-[0px] md:px-[25px] z-20 font-haviland'>
+          <div className='relative overflow-visible text-center bg-transparent text-[50px] md:text-[70px] px-[0px] md:px-[25px] z-20 font-haviland w-full'>
             You are Invited
           </div>
           <div className='z-10 h-[2px] bg-custom-darker-pink w-[150px] mt-[20px]'></div>
