@@ -7,11 +7,11 @@ import Maila from '../../assets/images/maila.jpg';
 const CoupleInfo = () => {
   return (
     <div id='about-us' className='relative px-4'>
-      <div className='mx-auto max-w-screen-2xl flex py-[80px] flex-row items-center justify-center'>
-        <div>
+      <div className='mx-auto max-w-screen-2xl flex py-[80px] flex-col gap-10 items-center justify-center md:flex-row'>
+        <div className='md:flex-1'>
           <div>
             <img className='mx-auto mb-[50px] w-[150px] rounded-full' src={Edward} alt='Edward' />
-            <div className='text-[50px] text-center leading-none mb-[10px] h-[60px] font-haviland'>
+            <div className='text-[50px] text-center leading-none mb-[10px] min-h-[60px] w-full max-w-[215px] lg:max-w-full mx-auto font-haviland'>
               Edward Ross Masilang
             </div>
             <div className='text-center'>
@@ -19,7 +19,7 @@ const CoupleInfo = () => {
               <br />
               "To love someone, is to love who they are. No matter what bounderies you both have."
             </div>
-            <div className='mt-[25px] flex flex-row justify-center'>
+            <div className='mt-[25px] flex flex-row justify-center items-center'>
               <div className='cursor-pointer mx-[10px]'>
                 <a
                   href='https://www.facebook.com/edwardrossmasilang'
@@ -53,8 +53,8 @@ const CoupleInfo = () => {
             </div>
           </div>
         </div>
-        <div className='flex items-center'>
-          <div className='relative shadow-2xl flex items-center justify-center rounded-full w-[70px] h-[70px] bg-custom-darker-pink mx-[40px]'>
+        <div className='flex items-center justify-center'>
+          <div className='relative shadow-2xl flex items-center justify-center rounded-full w-[70px] h-[70px] bg-custom-darker-pink'>
             <svg className='w-[30px] h-[30px]' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
               <path
                 d='M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z'
@@ -63,10 +63,12 @@ const CoupleInfo = () => {
             </svg>
           </div>
         </div>
-        <div>
+        <div className='md:flex-1'>
           <div>
             <img className='mx-auto mb-[50px] w-[150px] rounded-full' src={Maila} alt='Maila' />
-            <div className='text-[54px] text-center leading-none mb-[10px] h-[60px] font-haviland'>Maila Marañon</div>
+            <div className='text-[50px] text-center leading-none mb-[10px] min-h-[60px] w-full max-w-[215px] lg:max-w-full mx-auto font-haviland'>
+              Maila Marañon
+            </div>
             <div className='text-center'>
               Lawyer, Racer, Foodie, Loves reading, sports, cars and food
               <br />

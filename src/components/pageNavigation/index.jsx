@@ -21,7 +21,7 @@ const PageNavigation = () => {
 
   return (
     <div
-      className={`fixed h-[80px] z-[9999] transition-colors ease-linear ${
+      className={`fixed h-[80px] z-[9999] transition-colors ease-linear hidden md:block ${
         scrolling ? 'bg-custom-black shadow ' : 'bg-transparent '
       } overflow-hidden top-0 left-0 w-[100%] flex flex-col items-centers px-4`}
     >
