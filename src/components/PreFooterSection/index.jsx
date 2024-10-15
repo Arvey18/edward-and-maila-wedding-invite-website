@@ -31,7 +31,7 @@ const PreFooter = () => {
           </div>
         </div>
         <div className='flex-1 text-center md:text-right'>
-          <div className='text-white mb-[10px] font-haviland text-[30px]'>Couple Contact Info</div>
+          <div className='text-white mb-[10px] font-haviland text-[30px]'>Contact Info</div>
           <div className='text-white max-w-full md:max-w-[300px] ml-auto mr-auto md:ml-auto md:mr-0 mb-[20px]'>
             For any questions or details regarding our wedding, feel free to reach out! You can contact us with our
             mobile numbers 📱. We can't wait to celebrate with you! 🥂✨
