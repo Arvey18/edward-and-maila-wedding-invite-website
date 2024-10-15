@@ -115,8 +115,8 @@ const LocationSection = () => {
             <Marker position={receptionPosition} icon={CustomIcon}></Marker>
           </MapContainer>
         </div>
-        <div className='absolute w-full justify-center mx-auto hidden z-2 shadow top-[-180px] md:inline-flex flex-row left-[50%] translate-x-[-50%] '>
-          <div className='w-full max-w-[600px] text-center border-r-[1px] bg-white border-custom-darker-pink flex-1 p-[80px] flex justify-center items-center'>
+        <div className='absolute w-full justify-center mx-auto hidden z-2 top-[-180px] md:inline-flex flex-row left-[50%] translate-x-[-50%] '>
+          <div className='w-full max-w-[600px] text-center shadow  border-r-[1px] bg-white border-custom-darker-pink flex-1 p-[80px] flex justify-center items-center'>
             <div>
               <div className='font-medium mb-[15px] text-[40px] font-haviland'>Wedding Ceremony</div>
               <div className='h-[2px] w-[100px] mb-[20px] bg-custom-darker-pink mx-auto'></div>
@@ -139,7 +139,7 @@ const LocationSection = () => {
             </div>
           </div>
 
-          <div className='w-full max-w-[600px] text-center border-l-[1px] bg-white border-custom-darker-pink flex-1 p-[80px] flex justify-center items-center'>
+          <div className='w-full max-w-[600px] text-center shadow  border-l-[1px] bg-white border-custom-darker-pink flex-1 p-[80px] flex justify-center items-center'>
             <div>
               <div className='font-medium mb-[15px] text-[40px] font-haviland'>Wedding Reception</div>
               <div className='h-[2px] w-[100px] mb-[20px] bg-custom-darker-pink mx-auto'></div>
