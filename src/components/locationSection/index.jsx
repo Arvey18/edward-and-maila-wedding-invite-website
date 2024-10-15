@@ -82,7 +82,7 @@ const LocationSection = () => {
             <div className='font-medium mb-[15px] text-[40px] font-haviland'>Wedding Reception</div>
             <div className='h-[2px] w-[100px] mb-[20px] bg-custom-darker-pink mx-auto'></div>
             <div className='text-[14px] mb-[20px]'>
-              Saturday, 30 November 2021
+              Saturday, 30 November 2024
               <br />
               After Wedding
               <br />
@@ -144,7 +144,7 @@ const LocationSection = () => {
               <div className='font-medium mb-[15px] text-[40px] font-haviland'>Wedding Reception</div>
               <div className='h-[2px] w-[100px] mb-[20px] bg-custom-darker-pink mx-auto'></div>
               <div className='text-[14px] mb-[20px]'>
-                Saturday, 30 November 2021
+                Saturday, 30 November 2024
                 <br />
                 After Wedding
                 <br />
