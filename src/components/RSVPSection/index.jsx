@@ -70,15 +70,12 @@ const RSVPSection = () => {
   console.log(formData, 'form data');
 
   return (
-    <div
-      id='rsvp'
-      className='relative pt-[110px] xs:pt-[160px] sm:pt-[260px] md:pt-[410px] pb-[80px] px-4 bg-custom-gray'
-    >
+    <div className='relative pt-[110px] xs:pt-[110px] sm:pt-[260px] md:pt-[410px] pb-[80px] px-4 bg-custom-gray'>
       <div className='mx-auto max-w-screen-2xl'>
         <div className='absolute top-[-200px] xs:top-[-260px] left-[50%] translate-x-[-50%] w-full flex justify-center'>
           <img src={CoupleImage} className='w-full max-w-[900px]' alt='couple-photo' />
         </div>
-        <div className='text-[24px] font-medium w-[100%] flex flex-col justify-center items-center px-4'>
+        <div id='rsvp' className='text-[24px] font-medium w-[100%] flex flex-col justify-center items-center px-4'>
           <div className='relative overflow-visible text-center bg-transparent text-[50px] md:text-[70px] px-[0px] md:px-[25px] z-20 font-haviland w-full'>
             Are You Attending?
           </div>

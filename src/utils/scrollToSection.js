@@ -4,7 +4,13 @@ const scrollToSection = (id) => {
   const section = document.getElementById(id);
   if (section) {
     const sectionTop = section.getBoundingClientRect().top + window.scrollY; // Get the section's top position
-    window.scrollTo({ top: sectionTop - headerHeight, behavior: 'smooth' }); // Adjust for header height
+    const scrollPosition = sectionTop - headerHeight;
+
+    const maxScrollPosition = document.documentElement.scrollHeight - window.innerHeight;
+    window.scrollTo({
+      top: Math.min(scrollPosition, maxScrollPosition), // Ensure we don't scroll beyond max scrollable area
+      behavior: 'smooth',
+    });
   }
 };
 
