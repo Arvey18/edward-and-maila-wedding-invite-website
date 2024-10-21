@@ -10,17 +10,19 @@ const PreFooter = () => {
             attire reflects our chosen color palette
             <br />
             <br />
+            <div className='inline-flex flex-row gap-5 md:mx-0 mx-auto'>
+              <div className='rounded-full w-[30px] h-[30px] bg-[#cd848b]'></div>
+              <div className='rounded-full w-[30px] h-[30px] bg-[#ffc097]'></div>
+              <div className='rounded-full w-[30px] h-[30px] bg-[#84697c]'></div>
+              <div className='rounded-full w-[30px] h-[30px] bg-[#dbc8c1]'></div>
+            </div>
+            <br />
+            <br />
             Your presence is the greatest gift we could ask for, but if you'd like to offer more, a monetary gift would
             be sincerely appreciated. Thank you!
             <br />
             <br />
-            Your presence and thoughtful touch will make our day all the more memorable! 🥂✨
-          </div>
-          <div className='inline-flex flex-row gap-5 md:mx-0 mx-auto mb-10'>
-            <div className='rounded-full w-[30px] h-[30px] bg-[#cd848b]'></div>
-            <div className='rounded-full w-[30px] h-[30px] bg-[#ffc097]'></div>
-            <div className='rounded-full w-[30px] h-[30px] bg-[#84697c]'></div>
-            <div className='rounded-full w-[30px] h-[30px] bg-[#dbc8c1]'></div>
+            Your attention to detail will help make the day even more unforgettable! 🥂✨
           </div>
         </div>
         <div className='flex-1 text-center'>
@@ -40,8 +42,10 @@ const PreFooter = () => {
         <div className='flex-1 text-center md:text-right'>
           <div className='text-white mb-[10px] font-haviland text-[30px]'>Contact Info</div>
           <div className='text-white max-w-full md:max-w-[300px] ml-auto mr-auto md:ml-auto md:mr-0 mb-[20px]'>
-            For questions or details, feel free to reach out! It's our pleasure to celebrate with you! 🥂✨ You can
-            contact us on this following numbers:
+            For questions or details, feel free to reach out! It's our pleasure to celebrate with you! 🥂✨
+            <br />
+            <br />
+            You can contact us on this following numbers:
           </div>
           <div className='mb-[15px] text-white'>
             Edward:
