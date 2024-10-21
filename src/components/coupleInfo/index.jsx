@@ -74,7 +74,7 @@ const CoupleInfo = () => {
             <div className='text-center'>
               Lawyer. Racer. Adventurer.
               <br />
-              Loves food, coffee, and the beach
+              Loves food, sports, and the beach
               <br />
               "Love found me at the most unexpected time, proving that timing is simply destiny's plan"
             </div>
