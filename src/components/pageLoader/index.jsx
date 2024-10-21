@@ -27,7 +27,7 @@ const PageLoader = () => {
 
   return (
     <div className='fixed z-[9999] w-[100%] h-[100%] bg-custom-darker-pink flex flex-col items-center justify-center'>
-      <h1 className='ml16 text-white'>Made with love</h1>
+      <h1 className='ml16 text-white text-center'>Made with love</h1>
       <h2 className='text-white font-normal italic'>
         #<span className='font-bold'>EM</span>LoveForever
       </h2>
