@@ -6,8 +6,8 @@ const PreFooter = () => {
         <div className='flex-1 text-center md:text-left'>
           <div className='text-white mb-[10px] font-haviland text-[30px]'>Wedding Colors and Gifts</div>
           <div className='text-white max-w-full md:max-w-[300px] mb-[20px]'>
-            We can’t wait to celebrate our special day with you! To complement the occasion, we kindly ask that your
-            attire reflects our chosen color palette
+            We can’t wait to celebrate our special day with you! To complement the occasion, we ask that your attire
+            reflects our chosen color palette
             <br />
             <br />
             <div className='inline-flex flex-row gap-5 md:mx-0 mx-auto'>

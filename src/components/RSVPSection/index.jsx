@@ -82,7 +82,7 @@ const RSVPSection = () => {
           <div className='z-10 h-[2px] bg-custom-darker-pink w-[150px] mt-[20px]'></div>
         </div>
         <div className='relative m-auto text-center max-w-[580px] px-4 mt-[40px]'>
-          We are pleased to inform you that we have reserved two seats for you at our wedding reception. Kindly confirm
+          We are pleased to inform you that we have reserved 1 seat for you at our wedding reception. Kindly confirm
           your RSVP on or before November 18, 2024.
         </div>
 
