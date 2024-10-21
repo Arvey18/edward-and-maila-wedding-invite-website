@@ -15,9 +15,11 @@ const CoupleInfo = () => {
               Edward Ross Masilang
             </div>
             <div className='text-center'>
-              Visual artist. Businessman. Hobbyist. Loves art, sports, hobbies and cooking
+              Visual artist. Businessman. Computer hobbyist.
               <br />
-              "To love someone, is to love who they are. No matter what bounderies you both have."
+              Loves arts, sports, and cooking
+              <br />
+              "To love someone, is to love who they are. No matter what boundaries you both have."
             </div>
             <div className='mt-[25px] flex flex-row justify-center items-center'>
               <div className='cursor-pointer mx-[10px]'>
@@ -70,7 +72,9 @@ const CoupleInfo = () => {
               Maila Marañon
             </div>
             <div className='text-center'>
-              Lawyer, Racer, Foodie, Loves reading, sports, cars and food
+              Lawyer. Racer. Adventurer.
+              <br />
+              Loves food, coffee, and the beach
               <br />
               "Love found me at the most unexpected time, proving that timing is simply destiny's plan"
             </div>

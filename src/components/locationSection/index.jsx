@@ -32,8 +32,8 @@ const LocationSection = () => {
           <div className='z-10 h-[2px] bg-custom-darker-pink w-[150px] mt-[20px]'></div>
         </div>
         <div className='relative m-auto text-center max-w-[680px] px-4 mt-[40px]'>
-          We are very happy to announce that you're invited in our wedding. Your appearance will add happines to our
-          wedding as you're one of the most important persons in our life. Please let us know if you can make it.
+          We are delighted to let you know that you’re invited on our wedding day. Your presence will add splendor to
+          our precious moments. Please let us know if you can make it and be one of our special guests.
         </div>
         <div className='flex justify-center mt-[15px]'>
           <div
@@ -84,7 +84,7 @@ const LocationSection = () => {
             <div className='text-[14px] mb-[20px]'>
               Saturday, 30 November 2024
               <br />
-              After Wedding
+              After Wedding Ceremony
               <br />
               La Benue Center for Events,
               <br /> Cabanatuan City
@@ -146,7 +146,7 @@ const LocationSection = () => {
               <div className='text-[14px] mb-[20px]'>
                 Saturday, 30 November 2024
                 <br />
-                After Wedding
+                After Wedding Ceremony
                 <br />
                 La Benue Center for Events,
                 <br /> Cabanatuan City

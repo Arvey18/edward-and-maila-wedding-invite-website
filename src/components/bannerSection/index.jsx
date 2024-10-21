@@ -20,7 +20,7 @@ const BannerSection = () => {
       <div className='relative text-center z-2 uppercase text-white font-medium'>
         🕒 November 30, 2024 - 2:30 pm <span className='hidden md:inline font-light'>|</span>{' '}
         <br className='block md:hidden' />
-        📍 CIC CHURCH CHAPEL
+        📍 Immaculate Conception Chapel - Cabanatuan City
       </div>
     </div>
   );
