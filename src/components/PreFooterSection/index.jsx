@@ -31,13 +31,7 @@ const PreFooter = () => {
             We're so excited to share our big day with you! Join us in celebrating love, laughter, and forever. Don’t
             forget to tag your photos with #[OurHashtag] below — we can’t wait to see all the special moments! 🥂✨
           </div>
-          <div className='text-white font-bold'>
-            #EMLoveForever
-            <br />
-            #EdwardLoveMaila
-            <br />
-            #ForeverEdwardAndMaila
-          </div>
+          <div className='text-white font-bold'>#MAIpERfectmatch</div>
         </div>
         <div className='flex-1 text-center md:text-right'>
           <div className='text-white mb-[10px] font-haviland text-[30px]'>Contact Info</div>

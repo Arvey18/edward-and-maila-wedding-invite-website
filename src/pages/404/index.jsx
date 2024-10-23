@@ -7,7 +7,7 @@ const NotFound = () => {
     <div className='fixed z-[9999] w-[100%] h-[100%] bg-custom-gray flex flex-col items-center justify-center'>
       <h1 className='ml16 text-custom-black'>Page not found!</h1>
       <h2 className='text-custom-black font-normal italic'>
-        #<span className='font-bold'>EM</span>LoveForever
+        #<span className='font-bold'>MAI</span>p<span className='font-bold'>ER</span>fectmatch
       </h2>
       <div
         href='https://maps.app.goo.gl/fpByHdqxhDuoNeZZ7'
