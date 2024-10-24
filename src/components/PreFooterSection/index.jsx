@@ -9,7 +9,7 @@ const PreFooter = () => {
         <div className='flex-1 text-center md:text-left'>
           <div className='text-white mb-[10px] font-haviland text-[30px]'>Wedding Colors and Gifts</div>
           <div className='text-white max-w-full md:max-w-[300px] mb-[20px]'>
-            We can't wait to celebrate our special day with you! To complement the occasion, we require formal attire: :
+            We can't wait to celebrate our special day with you! To complement the occasion, we require formal attire:
             black coat and tie for men, and formal gown for women from any of our chosen color palette
             <br />
             <br />
@@ -27,9 +27,6 @@ const PreFooter = () => {
             <br />
             Your presence is the greatest gift we could ask for, but if you'd like to offer more, a monetary gift would
             be sincerely appreciated. Thank you!
-            {/* <br />
-            <br /> */}
-            {/* Your attention to detail will help make the day even more unforgettable! 🥂✨ */}
           </div>
         </div>
         <div className='flex-1 text-center'>
@@ -50,7 +47,7 @@ const PreFooter = () => {
             For questions or details, feel free to reach out! It's our pleasure to celebrate with you! 🥂✨
             <br />
             <br />
-            You can contact us on these following numbers:
+            You can contact us on these numbers:
           </div>
           <div className='mb-[15px] text-white'>
             Edward:
